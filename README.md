@@ -38,3 +38,30 @@
 		- Examples: được viết bởi ngôn ngữ tự nhiên và chú thích (annotated) để các giá trị tham số có thể được trích xuất.
 		
 		- Templates: Chứa các tham chiếu trực tiếp tới các thực thể thay vì chú thích (annotated), nghĩa là tên thực thể được đặt trước bằng ký hiệu @
+
+	- Example Annotation:
+		- _Annotation (lời chú giải) là một quá trình (hay kết quả của một quá trình) của liên kết một từ hay một cụm từ trở thành một thực thể._
+		- Automatic Annotation (tiến trình tự động): 
+			Khi bạn thêm một ví dụ cho "User says" (người dùng nói), chúng sẽ được chú thích tự động. Hệ thống phát hiện sự tương ứng giữa các từ hoặc cụm từ và các thực thể của nhà phát triển và hệ thống hiện tại, làm nổi bật các từ/ cụm từ đó. (Highlight). Nó cũng tự động gán một tên tham số cho mỗi thực thể đã được phát hiện.
+
+		- Editing Automatically Annotated Examples: Chỉnh sửa tự đông
+		... [DiaglowFlow](https://dialogflow.com/docs/intents)
+
+	- Action: 
+		- _Phần này bao gồm trường tên hành động và bảng thông số (Key-Value)_
+		- _Tên hành động (Action name) được định nghĩa thủ công. Nó sẽ là từ kích hoạt cho ứng dụng của bạn để thực hiện một hành động cụ thể._
+		- _Parameter (tham số) có thể được điền tự động "User says" examples (trường hợp thực tế) và templates (mẫu), hoặc thêm thủ công._
+
+	- Response: 
+		- Trong phần này, bạn có thể định nghĩa phản hồi của Agents được cung cấp bởi ứng dụng của bạn khi Intents được kích hoạt. (User says)
+		- **Hành động phản hồi**
+
+	- Contexts (Ngữ cảnh)
+		- Ngữ cảnh được thiết kế để chuyển thông tin từ các cuộc hội thoại trước đây hoặc các nguồn bên ngoài (Vd: thông tin người dùng, thông tin thiết bị). Ngoài ra chúng có thể được sử dụng để quản lý luồng hội thoại.
+
+		- Các ngữ cảnh đầu vào là một điều kiện tiên quyết cho mục đích (Intent) kết hợp, Intent (ý định) sẽ tham gia vào việc kết hợp chỉ khi tất cả các ngữ cảnh trong trường ngữ cảnh đầu vào đang hoạt động.
+
+	- Độ ưu tiên ý định (Intents priority)
+		- Độ ưu tiên ý định cho phép bạn gán trọng lượng nhiều hơn cho một trong những ý định trong trường hợp một cụm từ nhập phù hợp với nhiều ý định. 
+* Entites
+	- Các thực thể là một công cụ mạnh mẽ được sử dụng để trích xuất các giá trị tham số đầu vào từ ngôn ngữ tự nhiên. Mọi dữ liệu quan trọng bạn muốn lấy từ yêu cầu của người sử dụng sẽ có một thực thể 
